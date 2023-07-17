@@ -14,6 +14,26 @@ public class IslandCell {
         this.xcord = xcord+1;
         this.ycord = ycord+1;
     }
+    // if there are two fertile animals with different sex on the same cell, they have a chance of breeding
+    // they have to be of the same type (prey or predator)
+    public void breedAnimal() {
+        // TODO implement here
+    }
+
+    public void predatorHunt() {
+        // TODO implement here
+    }
+
+    public void preyEat() {
+        // TODO implement here
+    }
+
+    public void addPrey() {
+        prey.add(new Prey());
+    }
+    public void addPredator() {
+        predators.add(new Predator());
+    }
 
     public int getXcord() {
         return xcord;

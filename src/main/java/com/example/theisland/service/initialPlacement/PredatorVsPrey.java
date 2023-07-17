@@ -2,7 +2,7 @@ package com.example.theisland.service.initialPlacement;
 
 import com.example.theisland.domain.IslandCell;
 
-public class RandomPlacement implements PlacementStrategy{
+public class PredatorVsPrey implements PlacementStrategy{
     @Override
     public void populateIsland(IslandCell[][] islandGrid, int startPrey, int startPredator){
         int size = islandGrid.length;

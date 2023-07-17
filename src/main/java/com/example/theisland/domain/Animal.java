@@ -22,24 +22,10 @@ public abstract class Animal {
 
     public Animal() {
     }
-    // the animal will move to a random adjacent cell
-    // will be drawn towards food (prey for predators, food for prey)
-    // with the chance of moving being higher if hunger is high
-    // and the lower available food is (food for prey, other animals for predators)
-    // might have to implement it somewhere else.
-    public void move() {
-        // TODO implement here
-    }
+
     public void calculateHealth(double ageImpactOnDeath, double hungerImpactOnDeath) {
         double youngAgeRiskFactor = (age <= 12) ? 1.2 : 1.0;
         health = 1-((age * ageImpactOnDeath * youngAgeRiskFactor) + (hunger * hungerImpactOnDeath));
-    }
-
-    // if there are two fertile animals with different sex on the same cell, they have a chance of breeding
-    // they have to be of the same type (prey or predator)
-    // might have to implement it somewhere else.
-    public void breed() {
-        // TODO implement here
     }
 
     public void die(double generalDeathRate, int maximumLifeSpan) {

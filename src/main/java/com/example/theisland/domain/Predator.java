@@ -11,7 +11,7 @@ public class Predator extends Animal{
     public Predator() {
     }
 
-    public void hunt() {
+    public void hunt(Prey prey) {
         // TODO implement here
     }
 }

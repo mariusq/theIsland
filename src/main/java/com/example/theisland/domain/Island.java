@@ -25,4 +25,10 @@ public class Island {
 
     public void populateIsland(IslandCell[][] islandGrid, int startPrey, int startPredator, boolean randomPlacement) {
     }
+
+    // moves animals on the island
+    // will be more likely to move if they're hungry and there is a lack of food
+    public void moveAnimals(IslandCell[][] islandGrid) {
+        // TODO Implement this method
+    }
 }

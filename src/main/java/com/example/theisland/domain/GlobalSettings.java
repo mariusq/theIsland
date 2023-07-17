@@ -1,6 +1,9 @@
 package com.example.theisland.domain;
 
-public class globalSettings {
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class GlobalSettings {
     //Prey settings
     double preyBreedRate;
     int preyFertilityAgeMin;
